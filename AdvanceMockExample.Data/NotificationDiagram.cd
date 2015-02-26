@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="AdvanceMockExample.Models.Notification">
+    <Position X="0.5" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAACAAAAAAAAAAAAAAEAAAQAAAAAAAAACQAAAAAAAAA=</HashCode>
+      <FileName>Models\Notification.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="NotificationEvents" />
+      <Property Name="NotificationRecipients" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AdvanceMockExample.Models.NotificationEvent">
+    <Position X="4" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAAAAAAAAAAAQACgAAAgAAAAAAA=</HashCode>
+      <FileName>Models\NotificationEvent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Notification" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="NotificationEventLogs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="AdvanceMockExample.Models.NotificationEventLog">
+    <Position X="7.75" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAACACAAAAAAAAAAAAAAACAAAEACAAAAAAAAAA=</HashCode>
+      <FileName>Models\NotificationEventLog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AdvanceMockExample.Models.NotificationRecipient">
+    <Position X="7.75" Y="3.25" Width="2" />
+    <AssociationLine Name="NotificationEventLogs" Type="AdvanceMockExample.Models.NotificationEventLog">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.671" Y="0.362" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ABADAAAAAAAAAAAAAACAAAgAAAAIQACAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NotificationRecipient.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="NotificationEventLogs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
